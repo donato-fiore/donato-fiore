@@ -1,13 +1,31 @@
 <style>
 	textarea {
-     width: 100%;
-     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-     box-sizing: border-box;         /* Opera/IE 8+ */
+		color:white;
+		width: 100%;
+		height: 40%;
+     	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+     	box-sizing: border-box;         /* Opera/IE 8+ */
+		resize: none;
+	}
+	.ta1 {
+		background-color: #1d2333;
+	}
+	.ta2 {
+		background-color: #0d101e;
+
+	}
+	
+	body {
+		background-color: #0e1525;
+		color: white;
+	}
+	button {
+		background-color: #262b3b;
+		color:#20ab46;
 	}
 
 </style>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +33,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brainfrick</title>
 </head>
-<body>
-	<!--<input id="bad" placeholder="Code" autocomplete="off"></input>-->
-	<textarea id="bad" rows="4" cols="50"></textarea>
+<body background="#0e1525">
+	<textarea class="ta1" id="bad" rows="4" cols="50"></textarea>
+	<p></p>
 	<button onclick="buttonPress()">Compile</button>
-	<p id="output"></p>
+	<p></p>
+	<textarea class="ta2"id="output" rows="4" cols="50" readonly></textarea>
+	
 </body>
 </html>
 
